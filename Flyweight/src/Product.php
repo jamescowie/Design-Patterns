@@ -3,12 +3,10 @@
 class Product
 {
     private $productName;
-    private $productColor;
 
-    function __construct($productName, $productColor)
+    function __construct($productName)
     {
         $this->productName = $productName;
-        $this->productColor = $productColor;
     }
 
     public function getName()
@@ -16,8 +14,4 @@ class Product
         return $this->productName;
     }
 
-    public function getColor()
-    {
-        return $this->productColor;
-    }
 }

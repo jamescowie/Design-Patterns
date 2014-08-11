@@ -9,7 +9,7 @@ class ProductSpec extends ObjectBehavior
 {
     function let()
     {
-        $this->beConstructedWith('Product Name', 'Blue');
+        $this->beConstructedWith('Product Name');
     }
 
     function it_is_initializable()
@@ -20,10 +20,5 @@ class ProductSpec extends ObjectBehavior
     public function it_should_allow_getting_product_name()
     {
         $this->getName()->shouldReturn('Product Name');
-    }
-
-    public function it_should_allow_getting_product_color()
-    {
-        $this->getColor()->shouldReturn('Blue');
     }
 }
