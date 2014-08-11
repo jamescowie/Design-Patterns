@@ -1,9 +1,8 @@
 <?php
-class uppercaseTemplate extends SanitizerTemplateAbstract
+class upperTemplate extends SanitizerTemplateAbstract
 {
     function processContent($content)
     {
         return strtoupper($content);
     }
-
 }
